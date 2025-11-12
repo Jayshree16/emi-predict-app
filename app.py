@@ -1,6 +1,10 @@
 import streamlit as st
 from pathlib import Path
 
+
+from download_models import download_models_if_missing
+download_models_if_missing()
+
 st.set_page_config(
     page_title="EMIPredict AI",
     page_icon="💳",
