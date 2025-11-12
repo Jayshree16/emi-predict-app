@@ -1,0 +1,200 @@
+✅ Light Fintech Theme Variables
+:root {
+  --bg: #f7fafa;
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --card-hover: rgba(0, 190, 255, 0.10);
+  --border: rgba(0, 0, 0, 0.08);
+  --text-primary: #002b36;
+  --text-muted: #4f6f7d;
+  --grad1: #00C6FF;
+  --grad2: #009ACD;
+}
+
+/* ✅ Main Background */
+.stApp {
+    background:
+        url("assets/background1.png") no-repeat center center fixed,
+        linear-gradient(180deg, #ffffff, #f1f9fb);
+
+    background-size: cover;
+    color: var(--text-primary);
+}
+
+/* ✅ Clean White Cards */
+.glass {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  transition: all 0.25s ease;
+}
+
+/* ✅ Card Hover */
+.glass:hover {
+  background: #ffffff;
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0,150,255,0.18);
+}
+
+
+/* ✅ Buttons */
+.stButton > button {
+  background: linear-gradient(135deg, var(--grad1), var(--grad2));
+  border: none;
+  color: white;
+  padding: 0.65rem 1.3rem;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0,150,255,0.25);
+}
+
+.stButton > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0,160,255,0.35);
+}
+
+/* ✅ Sidebar */
+.css-1d391kg {
+    background: rgba(255,255,255,0.75) !important;
+    border-right: 1px solid rgba(0,0,0,0.06);
+    backdrop-filter: blur(8px);
+}
+
+/* ✅ Remove sidebar header space */
+.css-12oz5g7 {
+    padding-top: 0 !important;
+}
+
+/* ✅ Logo Glow */
+.logo-glow {
+    filter: drop-shadow(0px 0px 12px rgba(0,160,255,0.45));
+}
+
+/* ✅ Headings */
+h1, h2, h3, h4 {
+  color: #003244 !important;
+}
+
+
+
+
+/* ============ Root palette (light fintech) ============ */
+:root{
+  --bg:#f7fafa;
+  --card:#ffffff;
+  --muted:#4f6f7d;
+  --text:#002b36;
+  --line:rgba(0,0,0,0.08);
+  --grad1:#00C6FF;
+  --grad2:#009ACD;
+  --shadow:0 10px 24px rgba(0,0,0,0.07);
+  --shadowHover:0 16px 32px rgba(0,150,255,0.18);
+}
+
+/* ============ App background ============ */
+.stApp{
+  background:
+     url("assets/background1.png") no-repeat center center fixed,
+     linear-gradient(180deg,#ffffff,#f1f9fb);
+  background-size: cover;
+  color: var(--text);
+}
+
+/* ============ Sidebar (A) ============ */
+.css-1d391kg{
+  background: rgba(255,255,255,0.85) !important;
+  border-right: 1px solid var(--line);
+  backdrop-filter: blur(8px);
+}
+.logo-glow{ filter: drop-shadow(0 0 12px rgba(0,160,255,0.45)); }
+
+/* ============ Hero (A) ============ */
+.hero{
+  display:flex; gap:28px; align-items:stretch; margin: 18px 0 6px 0;
+}
+.hero-left{
+  flex:1.6; background: rgba(255,255,255,0.92);
+  border:1px solid var(--line); border-radius:18px; padding:28px;
+  box-shadow: var(--shadow);
+}
+.hero-right{
+  flex:1; display:flex; flex-direction:column; gap:16px;
+}
+.hero-title{
+  font-size:48px; font-weight:800; letter-spacing:0.3px; margin:2px 0 8px 0;
+}
+.hero-title span{
+  background: linear-gradient(135deg,var(--grad1),var(--grad2));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.hero-subtitle{ color:var(--muted); font-size:18px; line-height:1.6; }
+.cta-row{ margin-top:12px; }
+.cta-btn{
+  display:inline-block; padding:10px 18px; border-radius:12px;
+  background: linear-gradient(135deg,var(--grad1),var(--grad2));
+  color:#fff; font-weight:700; text-decoration:none; box-shadow: var(--shadow);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.cta-btn:hover{ transform: translateY(-2px); box-shadow: var(--shadowHover); }
+
+.hero-badge{
+  background: rgba(255,255,255,0.92); border:1px solid var(--line);
+  border-radius:16px; padding:16px 18px; box-shadow: var(--shadow);
+}
+.badge-title{ font-weight:800; }
+.badge-sub{ color:var(--muted); font-size:14px; }
+
+/* ============ Cards (A3 layout + hover) ============ */
+.card-row{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:26px; margin-top: 20px;
+}
+.card-box{
+  background: var(--card);
+  border:1px solid var(--line);
+  border-radius:18px; padding:24px 22px;
+  box-shadow: var(--shadow);
+  min-height: 240px;
+  transition: transform .22s ease, box-shadow .22s ease, background .22s ease;
+}
+.card-box:hover{
+  transform: translateY(-6px);
+  background:#fff;
+  box-shadow: var(--shadowHover);
+}
+.card-icon{ width:60px; height:auto; margin-bottom:14px; display:block; }
+.ghost-link{
+  display:inline-block; margin-top:10px; font-weight:700; text-decoration:none;
+  color:#007aa3; border-bottom:2px solid rgba(0,122,163,0.18);
+}
+.ghost-link:hover{ color:#005e7a; border-bottom-color: rgba(0,122,163,0.35); }
+
+/* ============ Info section & footer ============ */
+.glass{
+  background: rgba(255,255,255,0.92);
+  border:1px solid var(--line);
+  border-radius:18px; padding:22px 24px; margin-top:24px;
+  box-shadow: var(--shadow);
+}
+.about ul{ margin:10px 0 0 18px; color:var(--muted); }
+.footer{
+  text-align:center; color: var(--muted); padding: 22px 0 12px 0;
+}
+
+/* Buttons row (native page_link buttons) */
+.stButton>button{
+  background: linear-gradient(135deg,var(--grad1),var(--grad2));
+  color:#fff; border:none; border-radius:12px; font-weight:800;
+  padding:10px 16px; box-shadow: var(--shadow);
+}
+.stButton>button:hover{ box-shadow: var(--shadowHover); }
+
+/* Responsiveness */
+@media (max-width: 1100px){
+  .hero{ flex-direction: column; }
+  .card-row{ grid-template-columns: 1fr; }
+}

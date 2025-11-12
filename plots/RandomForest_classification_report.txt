@@ -1,0 +1,9 @@
+              precision    recall  f1-score   support
+
+    Eligible     0.9630    0.0023    0.0046     11167
+   High_Risk     0.0000    0.0000    0.0000      2623
+Not_Eligible     0.7732    1.0000    0.8721     46930
+
+    accuracy                         0.7733     60720
+   macro avg     0.5787    0.3341    0.2923     60720
+weighted avg     0.7747    0.7733    0.6749     60720
