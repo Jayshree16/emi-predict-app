@@ -170,8 +170,8 @@ def pick_latest_model(folder: Path, contains: str):
 def load_models():
     models_dir = Path("models")
     # You can change the substrings if your saved names differ
-    clf_path = pick_latest_model(models_dir, "best_classification_model")
-    reg_path = pick_latest_model(models_dir, "best_regression_model")
+    clf_path = pick_latest_model(models_dir, "best_classification_model_new")
+    reg_path = pick_latest_model(models_dir, "best_regression_model_new")
     clf = joblib.load(clf_path)
     reg = joblib.load(reg_path)
     # Optional label encoder (only if you saved it)
